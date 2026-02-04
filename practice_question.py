@@ -18,7 +18,10 @@ class Cow(Animal):
 c = Cat()
 c.sound()
 w = Cow()
-w.sound()                                                                                                                   
+w.sound() 
+
+
+
 # polymorphism(method overloading) example
 
 class Math:

@@ -32,7 +32,7 @@ print(m.add(2, 3, 4))
 
 class Bird:
     def fly(self):
-        print("Bird can fly")
+        print("Bird can fly")                          
 
 class Airplane:
     def fly(self):

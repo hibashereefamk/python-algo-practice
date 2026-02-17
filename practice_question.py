@@ -79,3 +79,30 @@ class Bank:
 
     def get_balance(self):
         return self.__balance
+
+
+
+number=234737
+def reverse_number(num):
+    reverse=0
+    while num>0:
+        digit=num % 10
+        reverse=reverse*10+digit
+        num=num//10
+    return reverse  
+print(reverse_number(number))
+
+def secpnd_largest(nums):
+    largest='-infite'
+    second='-infite'
+    for x in nums:
+        if x > largest:
+            second=largest
+            largest =x
+        elif  x > second or largest != second:
+            second= x
+        return second
+num=[1,3,4,5,3]
+print(secpnd_largest(num))
+
+

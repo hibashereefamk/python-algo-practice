@@ -93,15 +93,15 @@ def reverse_number(num):
 print(reverse_number(number))
 
 def secpnd_largest(nums):
-    largest='-infite'
-    second='-infite'
+    largest=float('-inf')
+    second=float('-inf')
     for x in nums:
         if x > largest:
             second=largest
             largest =x
-        elif  x > second or largest != second:
+        elif  x > second or x != largest:
             second= x
-        return second
+    return second
 num=[1,3,4,5,3]
 print(secpnd_largest(num))
 

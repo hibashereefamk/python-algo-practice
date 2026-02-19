@@ -118,3 +118,107 @@ print(dcvb)  # Output: true
 
 
 
+number= 324354
+reverse =0
+while number > 0:
+    digit =number % 10
+    reverse =reverse*10 + digit
+    number =number //10
+print(reverse)
+
+def second_largest(nums):
+    largest=float('-inf')
+    second=float('-inf')
+    for x in nums:
+        if x > largest:
+            second =largest
+            largest= x
+        elif x > second and x!= largest:
+            second =x
+        return second
+num=[1,3,4,5,3]
+print(second_largest(num))
+
+def secpnd_largest(nums):
+    largest=float('-inf')
+    second=float('-inf')
+    for x in nums:
+        if x > largest:
+            second=largest
+            largest =x
+        elif  x > second and x != largest:
+            second= x
+    return second
+num=[1,3,4,5,3]
+print(secpnd_largest(num))
+
+tup=(1,2,3,4,5,6)
+tuple1=tuple(x**2 for x in tup)
+print(tuple1)
+print(id(tup))
+print(id(tuple1))
+
+
+tup1=(1,2,3)
+for x in tup1:
+    print(x**2)
+list1=list(tup1)
+list1[0]=10
+tuple2=tuple(list1)
+print(tuple2)
+
+
+result =list(map(lambda x:x**2,num))
+print(result)
+
+number=[2,3,4,5,2]
+square=[x**2 for x in number if x<5 and x%2 ==0]
+print(square)
+
+str='python'
+reverse= str[::-1]
+result=reverse[:-1]+reverse[-1].upper()
+result2=str[0].upper()+str[1:]
+result3= reverse[0].upper()+reverse[1:]
+print(result2)
+print(result3)
+print(result)
+
+str='jchbfhfvb'
+
+revrse3 =str[::-1]
+reverse=revrse3[:-1]+revrse3[-1].upper()
+print(reverse)
+value=''
+for i in str:
+    value=i+value
+    value=value[:-1]+value[-1].upper()
+print(value)
+
+data = {1: "a", 2: "b", 3: "c", 4: "d"}
+clean={k:v for k,v in data.items() if k %2 ==0}
+print (clean)
+
+numbere=[2,2,43,12,4,2313,4,2,3,4,5]
+num=[x for x in numbere if x % 2==0 or x % 3==0]
+print(num)
+
+d=[1,2,3,4,5,6]
+e={k:k*k for k in d}
+print(e)
+
+with open('text.txt','w') as f:
+    f.write('hello world')
+
+with open('text.txt','r') as f:
+    print(f.read())
+num2=list(map(lambda x:x*2,[1,2,3,4]))
+print(num2)
+double =list(map(lambda x: x*2,[1,2,3,4,5,6,7,7] ))
+result=list(filter(lambda x:x<5 ,double))
+print(result)
+
+
+
+
+

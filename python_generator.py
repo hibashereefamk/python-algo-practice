@@ -45,4 +45,8 @@ def add(lst):
 for x in add([1,2,3,4,5,67]):
   
     print(x)
+def generator(num):
+    yield num*1
+t=generator(3)
+print(next(t))
     

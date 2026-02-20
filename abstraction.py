@@ -1,4 +1,4 @@
-from abc import ABC,abstractmethod
+ffrom abc import ABC,abstractmethod
 class Shape(ABC):
     @abstractmethod
     def area(self):
@@ -77,7 +77,7 @@ class FullTimeEmployee(Employee):
         self.days=days
         
     def calculate_salary(self):
-        salary=self.slary_hr*12*days
+        salary=self.slary_hr*12*self.days
         print(salary)
 
 class PartTimeEmployee(Employee):

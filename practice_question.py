@@ -5,8 +5,6 @@ class Animal:
 
 class Dog(Animal):
     pass
-
-
 d = Dog()                 
 d.sound()
 # polymorphism(Method Overriding) example

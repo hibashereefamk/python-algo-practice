@@ -29,3 +29,14 @@ print(result)
 maping=['apple', 'banana', 'cherry']
 result =list(map(lambda x:x.upper(),maping))
 print(result)
+
+import statistics
+
+data = [10, 20, 20, 50, 100]
+
+mean_value =statistics.mean(data)
+media_value =statistics.media(data)
+
+
+print("Mean:", mean_value)
+print("Median:", median_value)

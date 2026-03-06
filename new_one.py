@@ -40,3 +40,38 @@ media_value =statistics.media(data)
 
 print("Mean:", mean_value)
 print("Median:", median_value)
+
+
+x='problem solving'
+def swap(list1):
+    part1=''
+    part2=''
+    space=False
+    for x in list1:
+        if x == ' ':
+            space=True
+        elif not space:
+            part1+=x
+        else:
+            part2 +=x
+            
+    part1,part2=part2,part1
+    list1= part1 +" "+part2
+    return list1
+print(swap(x))
+
+def swap_word(lists):
+    part1=lists[:7]
+    part2=lists[8:]
+    part1,part2=part2,part1
+    list1= part1 +" "+part2
+    return list1
+print(swap_word(x))
+
+def reverse_swap(x):
+    slipts=x.split()
+    return " ".join(slipts[::-1])
+print(reverse_swap(x))
+
+    
+
